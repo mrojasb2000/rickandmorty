@@ -17,11 +17,14 @@ function List() {
         
     return (
         <>
-            <h2>Characters</h2>
+         <h2>Characters</h2>
+         <div className="row">
             {loading ? <p>Loading...</p> : characters.map((character) => (
                 <Character key={character.id} name={character.name} origin={character.origin} image={character.image} />
             ))}
+        </div>
         </>
+        
     );
 }
 

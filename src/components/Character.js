@@ -1,9 +1,13 @@
 function Character(character) {
-    return <>
-        <h3>{character.name}</h3>
-        <img src={character.image} alt={character.name} width='300' />
-        <p>{`Origin: ${character.origin && character.origin.name}`}</p>
-    </>;
+    return <div className="col-3">
+        <div className="card" style={{ height: "300px", marginBottom: "1rem", marginTop: "1rem" }}>
+            <img className="card-img-top" src={character.image} alt={character.name} />
+            <div className="card-body" style={{ padding: "0.5rem" }}>
+                <h3 className="card-title">{character.name}</h3>
+                <p>{character.origin.name}</p>
+            </div>
+        </div>
+    </div>
 };
 
 export default Character;
