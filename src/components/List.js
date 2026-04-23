@@ -13,7 +13,7 @@ function List() {
         }
 
         fetchCharacters();
-    }, [characters.length]);
+    }, []);
         
     return (
         <>
